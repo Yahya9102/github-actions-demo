@@ -1,0 +1,32 @@
+name: github-ci-demo
+
+on: 
+ push:
+  branches: [main]
+
+
+jobs: 
+ build:
+   runs-on: ubuntu-latest
+   steps:
+     - name: checkout repository
+       uses: actions/checkout@v3       
+     - name: install dependencies
+       run: npm install
+
+
+
+       
+
+
+ #on:
+ # push:
+  #  branches: [ main ]
+
+#jobs:
+ # job-namn:
+#    runs-on: ubuntu-latest
+ #   steps:
+  #    - name: Stegbeskrivning
+   #     run: kommando
+
